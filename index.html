@@ -3,40 +3,43 @@
 <head>
   <title>deetz</title>
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: black;
-  color: lime;
-  text-align: center;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: black;
+      color: lime;
+      text-align: center;
+    }
 
     .container {
       max-width: 800px;
-      margin: 60px auto;
+      margin: 80px auto;
       padding: 20px;
     }
 
     h1 {
       font-size: 3em;
-      color: #00ffd5;
+      color: lime;
+      text-shadow: 0 0 10px lime;
     }
 
     p {
       font-size: 1.2em;
-      opacity: 0.9;
+      text-shadow: 0 0 5px lime;
     }
 
     img {
       width: 300px;
-      border-radius: 20px;
       margin-top: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease;
+      border: 2px solid lime;
+      box-shadow: 0 0 15px lime;
     }
 
-    img:hover {
-      transform: scale(1.05);
+    hr {
+      border: 1px solid lime;
+      width: 60%;
+      margin: 30px auto;
     }
   </style>
 </head>
@@ -44,6 +47,9 @@ body {
 <body>
   <div class="container">
     <h1>Hello 👋</h1>
+
+    <hr>
+
     <p>jaidenpinchessjaidenpinchessjaidenpinchessjaidenpinchess.</p>
 
     <img src="IMG_9252.JPG">
