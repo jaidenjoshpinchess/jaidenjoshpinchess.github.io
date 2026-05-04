@@ -43,12 +43,26 @@
       transform: scale(1.05);
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 20px;
+    /* ✅ NEW: gallery grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
       margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
       box-shadow: 0 10px 25px rgba(255,255,255,0.15);
+    }
+
+    /* ✅ Mobile friendly */
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -61,8 +75,14 @@
       <a href="index.html">Home</a>
     </div>
 
-    <!-- Example image -->
-    <img src="IMG_9252.JPG">
+    <!-- ✅ 2x2 photo grid -->
+    <div class="gallery">
+      <img src="IMG_9252.JPG">
+      <img src="IMG_9252.JPG">
+      <img src="IMG_9252.JPG">
+      <img src="IMG_9252.JPG">
+    </div>
+
   </div>
 </body>
 </html>
